@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Payment Successful</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-green-100 flex items-center justify-center h-screen">
+    <div class="p-6 bg-white rounded shadow-md text-center">
+        <h1 class="text-2xl font-bold text-green-600 mb-4">Payment Successful!</h1>
+        <p class="text-lg">You have sent <strong>$<%= amount %></strong> to <strong><%= payee %></strong>.</p>
+        <button
+            onclick="window.location.href='/'"
+            class="mt-4 bg-blue-500 text-white py-2 px-4 rounded hover:bg-blue-600 transition"
+        >
+            Go Back
+        </button>
+    </div>
+</body>
+</html>
